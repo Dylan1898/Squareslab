@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 
 
-                else if(square.id % 2 == !0){
+                else if(square.id % 2 !== 0){
                 square.previousElementSibling.remove()
                 console.log('odd works')
              }
