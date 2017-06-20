@@ -34,7 +34,20 @@ document.addEventListener("DOMContentLoaded", function () {
             //     square.nextElementSibling.remove()
             //      console.log(' weird 0 even works')
             // }
-                /*else*/ if(square==container.firstChild)
+                /*else*/ 
+             if (square.id % 2 !== 0 && square==container.firstChild)  {
+                alert('Element does not extist')
+                console.log('odd 1 works')
+             }
+             else if (square.id % 2 !== 0 && boxCount == 2)  {
+                alert('Element does not extist')
+                console.log('odd 2 works')
+             }
+             else if (square.id % 2 !== 0)  {
+                square.previousElementSibling.remove()
+                console.log('odd works')
+             }
+               else  if(square==container.firstChild && square==boxCount )
                  {
                 alert('element does not exist!') 
                 console.log('first child working')
@@ -43,12 +56,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     alert('element does not exist!')
                     console.log('lst child working')
                 }
-                
-
-                else if(square.id % 2 !== 0){
+              
+                 else if(square ==boxCount) {
                 square.previousElementSibling.remove()
                 console.log('odd works')
              }
+                
              
              
              
@@ -63,14 +76,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log('its 0')
                 }
              
-             else{
-                 alert('element does not exist!')
-                 console.log('its the last else')
-             }
+            //  else{
+            //      alert('element does not exist!')
+            //      console.log('its the last else')
+            //  }
         })
 
         container.appendChild(square)
-        
+        var boxCount = document.querySelectorAll(container>square).length;
 
 
     });
