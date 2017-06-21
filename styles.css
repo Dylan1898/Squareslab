@@ -1,18 +1,18 @@
-
 .squares{
-    width:100px;
-    height: 100px;
+    width:150px;
+    height: 150px;
     background-color:black;
     float: left;
     margin: 10px;
-    
-}
-.squares:mouseover{
-
-   
-   
+    text-align: center;
+    vertical-align: center;
+    line-height: 150px;
+    font-size: 4em;
 }
 button{
     display: block;
-
+    border:black 2px solid; 
+    border-radius: 20px;
+    font-size: 1em;
+    padding:10px;
 }
